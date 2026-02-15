@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <style>
+      @keyframes spin { to { transform: rotate(360deg); } }
+      .gear { transform-origin: 64px 64px; animation: spin 4s linear infinite; }
+    </style>
+  </defs>
+  <rect width="128" height="128" fill="#000000"/>
+  
+  <!-- Outer frame -->
+  <rect x="8" y="8" width="112" height="112" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+  
+  <!-- Stylized gear/cog -->
+  <g class="gear">
+    <circle cx="64" cy="64" r="20" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+    <!-- Gear teeth -->
+    <rect x="62" y="28" width="4" height="12" fill="#FFFFFF"/>
+    <rect x="62" y="88" width="4" height="12" fill="#FFFFFF"/>
+    <rect x="28" y="62" width="12" height="4" fill="#FFFFFF"/>
+    <rect x="88" y="62" width="12" height="4" fill="#FFFFFF"/>
+    <!-- Diagonals -->
+    <rect x="41" y="36" width="4" height="10" fill="#FFFFFF" transform="rotate(-45 43 41)"/>
+    <rect x="83" y="36" width="4" height="10" fill="#FFFFFF" transform="rotate(45 85 41)"/>
+    <rect x="41" y="82" width="4" height="10" fill="#FFFFFF" transform="rotate(45 43 87)"/>
+    <rect x="83" y="82" width="4" height="10" fill="#FFFFFF" transform="rotate(-45 85 87)"/>
+  </g>
+  
+  <!-- Corner brackets -->
+  <polyline points="22,22 18,22 18,26" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <polyline points="106,22 110,22 110,26" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <polyline points="22,106 18,106 18,102" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <polyline points="106,106 110,106 110,102" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  
+  <!-- Dots for tech feel -->
+  <circle cx="24" cy="64" r="2" fill="#FFFFFF" opacity="0.6"/>
+  <circle cx="104" cy="64" r="2" fill="#FFFFFF" opacity="0.6"/>
+</svg>
